@@ -3,12 +3,16 @@ import java.util.Scanner;
 public class SumNumbers {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int controlNumber = Integer.parseInt(scanner.nextLine());
+
+        int n = Integer.parseInt(scanner.nextLine());
+
         int sum = 0;
-        while (sum < controlNumber) {
-            int number = Integer.parseInt(scanner.nextLine());
-            sum += number;
+        for (int i = 1; i <=n; i++) {
+            int numbers = Integer.parseInt(scanner.nextLine());
+            sum = sum + numbers;
+
         }
         System.out.println(sum);
+        }
     }
-}
+
